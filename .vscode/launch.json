@@ -1,0 +1,142 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Strings",
+      "request": "launch",
+      "mainClass": "Strings",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "trial",
+      "request": "launch",
+      "mainClass": "trial",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "backTracking",
+      "request": "launch",
+      "mainClass": "backTracking",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "GreedyAlgo",
+      "request": "launch",
+      "mainClass": "GreedyAlgo",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "DyanmicPro",
+      "request": "launch",
+      "mainClass": "DyanmicPro",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "NumPattern",
+      "request": "launch",
+      "mainClass": "NumPattern",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "MyGraphs",
+      "request": "launch",
+      "mainClass": "MyGraphs",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "HashmapImplement",
+      "request": "launch",
+      "mainClass": "HashmapImplement",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "MyHashMaps",
+      "request": "launch",
+      "mainClass": "MyHashMaps",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "Heaps$SWMpairs",
+      "request": "launch",
+      "mainClass": "Heaps$SWMpairs",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "pq_heaps",
+      "request": "launch",
+      "mainClass": "pq_heaps",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "Heaps$InnerHeaps",
+      "request": "launch",
+      "mainClass": "Heaps$InnerHeaps",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "MyPriorityQueue",
+      "request": "launch",
+      "mainClass": "MyPriorityQueue",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "Heaps",
+      "request": "launch",
+      "mainClass": "Heaps",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "MyBSTs",
+      "request": "launch",
+      "mainClass": "MyBSTs",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "BinTrees",
+      "request": "launch",
+      "mainClass": "BinTrees",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "MyArrays",
+      "request": "launch",
+      "mainClass": "MyArrays",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "java_475ea8f4"
+    },
+    {
+      "name": "(Windows) Launch",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "console": "externalTerminal"
+    }
+  ],
+  "version": "2.0.0"
+}
