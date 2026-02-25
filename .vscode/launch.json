@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Linkedlist",
+      "request": "launch",
+      "mainClass": "Linkedlist",
+      "projectName": "java_cbc7e81"
+    },
+    {
+      "type": "java",
       "name": "Strings",
       "request": "launch",
       "mainClass": "Strings",

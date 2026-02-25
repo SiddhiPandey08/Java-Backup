@@ -43,6 +43,7 @@ public class Linkedlist {
     public int removeFirst() {
         if (size == 0) {
             System.out.println("LL is empty");
+            return -1;
         } else if (size == 1) {
             int val = head.data;
             head = tail = null;
@@ -95,6 +96,19 @@ public class Linkedlist {
 
     public int recSearch(int target) {
         return helper(head, target);
+    }
+
+    public static int itrSearch(int target) {
+        Node temp = head;
+        int i = 0;
+        while (temp != null) {
+            if (temp.data == target) {
+                return i;
+            }
+            temp = temp.next;
+            i++;
+        }
+        return -1;
     }
 
     public void reverseLL() { // O(n)
@@ -181,6 +195,7 @@ public class Linkedlist {
 
     public void addMiddle(int idx, int data) {
         Node newNode = new Node(data);
+        size++;
         Node temp = head;
         int i = 0;
         if (idx == 0) {
