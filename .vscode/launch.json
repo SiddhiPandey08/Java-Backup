@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Arrays2D",
+      "request": "launch",
+      "mainClass": "Arrays2D",
+      "projectName": "java_cbc7e81"
+    },
+    {
+      "type": "java",
+      "name": "trial",
+      "request": "launch",
+      "mainClass": "trial",
+      "projectName": "java_cbc7e81"
+    },
+    {
+      "type": "java",
+      "name": "MyArrays",
+      "request": "launch",
+      "mainClass": "MyArrays",
+      "projectName": "java_cbc7e81"
+    },
+    {
+      "type": "java",
       "name": "Linkedlist",
       "request": "launch",
       "mainClass": "Linkedlist",

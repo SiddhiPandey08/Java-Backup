@@ -1,7 +1,7 @@
-//import java.util.*;
+import java.util.*;
 
 public class Arrays2D {
-    public static void searchMatrix(int matrix[][]) { // THIS WORKS FOR NEGATIVE TOOOO!!
+    public static void searchLargestInMatrix(int matrix[][]) { // THIS WORKS FOR NEGATIVE TOOOO!!
         int largest = Integer.MIN_VALUE;
 
         for (int i = 0; i < matrix.length; i++) {
@@ -12,6 +12,53 @@ public class Arrays2D {
             }
         }
         System.out.println(largest);
+    }
+
+    public static List<Integer> spiralOrder(int[][] matrix) {
+        ArrayList<Integer> res = new ArrayList<>();
+        int startRow = 0;
+        int startCol = 0;
+        int endRow = matrix.length - 1;
+        int endCol = matrix[0].length - 1;
+
+        while (startRow <= endRow && startCol <= endCol) {
+            // top section
+            for (int i = startCol; i <= endCol; i++) {
+                res.add(matrix[startRow][i]);
+            }
+
+            // right section
+            for (int i = startRow + 1; i <= endRow; i++) {
+                res.add(matrix[i][endCol]);
+            }
+
+            // bottom section
+            for (int i = endCol - 1; i >= startCol; i--) {
+                res.add(matrix[endRow][i]);
+            }
+
+            // left section
+            for (int i = endRow - 1; i >= startRow + 1; i--) {
+                res.add(matrix[i][startCol]);
+            }
+
+            startRow++;
+            startCol++;
+            endRow--;
+            endCol--;
+        }
+        return res;
+
+    }
+
+    public static int diagonalSum(int[][] mat) {
+        int res = 0;
+        for (int i = 0; i < mat.length; i++) {
+            res += mat[i][i];
+            if (i != mat.length - 1 - i)
+                res += mat[i][mat.length - 1 - i];
+        }
+        return res;
     }
 
     public static boolean staircaseSearch(int matrix[][], int key) {
@@ -36,7 +83,9 @@ public class Arrays2D {
                 { 27, 29, 37, 48 },
                 { 32, 33, 39, 50 } };
         int key = 100;
-        staircaseSearch(matrix, key);
+        // staircaseSearch(matrix, key);
+        System.out.println(spiralOrder(matrix));
+        System.out.println(diagonalSum(matrix));
         // int n = matrix.length, m = matrix[0].length;
         // Scanner sc = new Scanner(System.in);
 

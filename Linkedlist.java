@@ -210,7 +210,7 @@ public class Linkedlist {
         temp.next = newNode;
     }
 
-    public boolean isCycle() {
+    public boolean isCycle() { // O(n) tc and O(1) sc using floyd's cycle detection algorithm
         Node slow = head;
         Node fast = head;
         while (fast != null && fast.next != null) {
@@ -246,6 +246,17 @@ public class Linkedlist {
             fast = fast.next;
         }
         prev.next = null;
+        /* EDGE CASE
+head -> [1] -> [2] -> [3] -> [4]
+         ^                    |
+         |____________________|
+         In this case, slow starts at head and fast is already at the meeting point.
+         If the cycle connects back to head, both pointers are equal immediately (slow
+         == fast right away), so the while loop never executes — meaning prev stays
+         null.
+         Then this line crashes:
+         javaprev.next = null; // NullPointerException! prev was never assigned
+         */
 
     }
 

@@ -1,9 +1,7 @@
 public class MyArrays {
     /*
-     * 1]java ka inbuilt sorting pack aata hai Arrays.sort(arr) karke array sort ho
-     * jayega
-     * 2] bubble , insertion, selection sortings ki time complexity O(n^2) hoti hai
-     * 3]f collections.reverseorder()
+     * 1] bubble , insertion, selection sortings ki time complexity O(n^2) hoti hai
+     * 2]f collections.reverseorder()
      */
     public static int lastOccurence(int arr[], int key, int i) {
         if (i == arr.length) {
@@ -223,6 +221,23 @@ public class MyArrays {
         return divideAndConquer(nums, 0, nums.length - 1);
     }
 
+    // works for all and simpler
+    public static int kadanes_all_cases(int[] nums) {
+        int ms = nums[0];
+        int cs = 0;
+
+        for (int n : nums) {
+            if (cs < 0) {
+                cs = 0;
+            }
+
+            cs += n;
+            ms = Math.max(ms, cs);
+        }
+
+        return ms;
+    }
+
     public static int divideAndConquer(int[] nums, int left, int right) { // tc O(n log n) sc O(logn), alternative to
                                                                           // kadane's algo - works for all cases
         // Base case: only one element
@@ -278,7 +293,7 @@ public class MyArrays {
         }
     }
 
-    public static int SumSubArr(int numbers[]) {
+    public static int MaxSumSubArr(int numbers[]) {
         int currSum = 0;
         int maxSum = Integer.MIN_VALUE;
         int prefix[] = new int[numbers.length];
@@ -333,6 +348,8 @@ public class MyArrays {
     }
 
     public static void main(String[] args) {
+        int heights[] = { 4, 2, 0, 6, 3, 2, 5 };
+        System.out.println(TrappedRain(heights));
         System.out.println(divideAndConquer(new int[] { 4, -1, 2, 1 }, 0, 3));
         pairs(new int[] { 2, 4, 6, 8, 10 });
         // Example 1: No leaks (normal case)
